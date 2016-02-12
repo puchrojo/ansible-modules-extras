@@ -60,6 +60,8 @@ EXAMPLES = '''
   known_hosts: path='/etc/ssh/ssh_known_hosts'
                name='foo.com.invalid'
                key="{{ lookup('file', 'pubkeys/foo.com.invalid') }}"
+               
+Feature Request: It would be nice two example with a key as a string, one with absent and other with present. thanks
 '''
 
 # Makes sure public host keys are present or absent in the given known_hosts
